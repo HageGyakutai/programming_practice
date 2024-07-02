@@ -1,3 +1,4 @@
+/*Разбитие на части*/
 #include <stdio.h>
 
 int main(void)
