@@ -55,6 +55,9 @@ git merge -m "КОМЕНТ СЛИЯНИЯ С ПЕНАВЕТКОЙ" Pena_vetka //
 code . //#Запускает код из папки на маке надо ток инсталл Shell PATH чтоб был
 
 git remote //# Проверка на удаленные сервера
+git remote add origin https://github.com/HageGyakutai/programming_practice.githttps://github.com/HageGyakutai/programming_practice.git //# подключение удаленного сервера
+
+
 git push -u origin main //# Загрузка на сервер origin
 
 git push //# Отправить
