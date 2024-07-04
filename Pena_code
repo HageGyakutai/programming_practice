@@ -1,6 +1,0 @@
-#include <stdio.h>
-
-int main() {
-    printf("Пенный код")
-    return 0;
-}
