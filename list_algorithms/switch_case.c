@@ -1,3 +1,4 @@
+/*Метод switch case*/
 #include <stdio.h>
 
 int main(void)
@@ -7,7 +8,7 @@ int main(void)
         switch(x)
     {
         case 1: printf("One!\n");
-            break;
+            break; // без break выполнять будет все по очереди
         case 2: printf("One!\n");
             break;
         case 3: printf("One!\n");
