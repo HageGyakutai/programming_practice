@@ -66,3 +66,30 @@ git push -u origin main //# Загрузка на сервер origin
 
 git push //# Отправить
 git pull //# Тянуть
+
+
+bash
+BASH
+Как в bash разбить строку?
+Подскажите, как из строки получить 2 переменные.
+C названием проекта и остальной частью строки из https://github.com/USERNAME/REPOSITORIES
+получить:
+
+url = https://github.com/USERNAME/
+repa = REPOSITORIES
+Вопрос задан более двух лет назад  141 просмотр
+Подписаться 1  Простой 2 комментария
+Реклама
+cian.ru
+РЕКЛАМА
+РЕШЕНИЯ ВОПРОСА 1
+CityCat4 CityCat4 @CityCat4
+//COPY01 EXEC PGM=IEBGENER
+#!/bin/bash
+str="/usr/local/bin/blabla"
+str1=${str%/*}
+echo "[$str1]"
+str2=${str##*/}
+echo "[$str2]"
+
+Принцип понятен? Адаптируете под себя
