@@ -1,0 +1,2 @@
+clang-format -n important_function.c найти ошибки чистоты кода
+clang-format -i important_function.c исправление ошибок частоты кода
