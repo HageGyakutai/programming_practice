@@ -1,0 +1,32 @@
+int largestDevisor(int x, int y);
+
+int main() {
+    int num_1, num_2;
+
+    printf("Программа для вычисления НОД.\nВведите 2 целых числа: \n");
+    if (scanf("%d %d", &num_1, &num_2) != 2) {
+        printf("Ошибка ввода. Введите целые числа!\n");
+        return 0;
+    }
+    printf("%d", largestDevisor(num_1, num_2));
+    return 0;
+}
+
+int largestDevisor(int x, int y) {
+    int dif;
+    int max = x > y ? x : y;
+    int min = x > y ? y : y;
+    while (max - min != 0) {
+        if (max - min == 0) {
+            printf("%d\n", max);  // При равенстве нод любое из чисел
+            return max;
+        }
+        else {
+            dif = max - min;  // Разница между большим и меньшим
+            max = min;        // максимальному присвается минимум
+            min = dif;        // минимуму разница
+            }
+        
+    }
+    return max;
+}
